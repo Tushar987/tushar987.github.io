@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="utf-8" />
-<title>Recommender-System-Python</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!-- saved from url=(0083)https://www.kaggle.io/svf/1676985/1c44e7b739e1793a7b2b629d45703db9/__results__.html -->
+<html class="gr__kaggle_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Recommneder System Notebook</title><script src="./final_files/require.min.js"></script>
+<script src="./final_files/jquery.min.js"></script>
 
 <style type="text/css">
     /*!
@@ -11718,8 +11718,8 @@ ul.typeahead-list > li > a {
 
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
-body {
-  overflow: visible;
+html{body {
+  overflow-y
   padding: 8px;
 }
 
@@ -11745,13 +11745,23 @@ div#notebook {
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css">
+<link rel="stylesheet" href="./final_files/custom.css">
+
+
+<!-- This is Magic -->
+
+<style type="text/css">
+  html { overflow-y: scroll;}
+  body { position: relative; }
+</style>
+
+<!-- Magic Ended -->
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="./final_files/MathJax.js" id=""></script>
     <!-- MathJax configuration -->
-    <script type="text/x-mathjax-config">
+    <script type="text/x-mathjax-config;executed=true">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -11768,40 +11778,142 @@ div#notebook {
         }
     });
     </script>
-    <!-- End of mathjax configuration --></head>
-<body>
+    <!-- End of mathjax configuration --><!--<base target="_blank">--><base href="." target="_blank"><link href="./final_files/vendor.css" rel="stylesheet" type="text/css">
+<link href="./final_files/notebookViewer.css" rel="stylesheet" type="text/css"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body data-gr-c-s-loaded="true" style=""><div id="MathJax_Message" style="display: none;"></div>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+    <div class="">
+        
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Recommender-System">Recommender System<a class="anchor-link" href="#Recommender-System">&#182;</a></h1><p>We will be developing a movie recommender system based upon Collaborative-filtering to predict the name of the movie based upon the reviews of the other critics having similar taste. The systesm uses two different methods for finding similairties between the critics known as Euclidean-Distance-Score and Pearson-Correlation-Score. The final reault for both the methods were almost similar. After finding the similarity between critics, it uses the weighted average method to assign higher weight to the peer interest critics. Finally, It normalizes the score by deviding it by the similarities of the critics who reviewed that movie.</p>
-<h2 id="Finding-Similar-DataPoint">Finding Similar DataPoint<a class="anchor-link" href="#Finding-Similar-DataPoint">&#182;</a></h2><p>Two ways for calculating similarity scores</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Recommender-System">Recommender System<a class="anchor-link" href="https://www.kaggle.io/svf/1676985/1c44e7b739e1793a7b2b629d45703db9/__results__.html#Recommender-System" target="_self">¶</a></h1><p>We will be developing a movie recommender system based upon Collaborative-filtering to predict the name of the movie based upon the reviews of the other critics having similar taste. The systesm uses two different methods for finding similairties between the critics known as Euclidean-Distance-Score and Pearson-Correlation-Score. The final reault for both the methods were almost similar. After finding the similarity between critics, it uses the weighted average method to assign higher weight to the peer interest critics. Finally, It normalizes the score by deviding it by the similarities of the critics who reviewed that movie.</p>
+<h4 id="Finding-Similar-DataPoint">Finding Similar DataPoint<a class="anchor-link" href="https://www.kaggle.io/svf/1676985/1c44e7b739e1793a7b2b629d45703db9/__results__.html#Finding-Similar-DataPoint" target="_self">¶</a></h4><p>Two ways for calculating similarity scores :</p>
 <ol>
-<li><strong>Euclidean Distance Score</strong> : 1/(1+sqrt of sum of squares between two points)</li>
+<li>Euclidean Distance Score</li>
+<li>Pearson Correlation Score</li>
 </ol>
+<hr style="height:2px">
+</div>
+</div>
+</div>
+    </div>
 
-</div>
-</div>
-</div>
+    <div class="">
+        
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">sqrt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import Packages</span>
+
+<span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">sqrt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Getting more than one output Line</span>
+<span class="kn">from</span> <span class="nn">IPython.core.interactiveshell</span> <span class="k">import</span> <span class="n">InteractiveShell</span>
+<span class="n">InteractiveShell</span><span class="o">.</span><span class="n">ast_node_interactivity</span> <span class="o">=</span> <span class="s2">"all"</span>
 </pre></div>
 
 </div>
@@ -11809,60 +11921,384 @@ div#notebook {
 </div>
 
 </div>
+    </div>
+
+    <div class="">
+        
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># recommendation.py</span>
-<span class="c1"># A dictionary of movie critics and their ratings of a small</span>
-<span class="c1"># set of movies</span>
-<span class="n">critics</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Lisa Rose&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Lady in the Water&#39;</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">,</span> <span class="s1">&#39;Snakes on a Plane&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span>
-                         <span class="s1">&#39;Just My Luck&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Superman Returns&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;You, Me and Dupree&#39;</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">,</span>
-                         <span class="s1">&#39;The Night Listener&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">},</span>
-           <span class="s1">&#39;Gene Seymour&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Lady in the Water&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Snakes on a Plane&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span>
-                            <span class="s1">&#39;Just My Luck&#39;</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">,</span> <span class="s1">&#39;Superman Returns&#39;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span> <span class="s1">&#39;The Night Listener&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span>
-                            <span class="s1">&#39;You, Me and Dupree&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">},</span>
-           <span class="s1">&#39;Michael Phillips&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Lady in the Water&#39;</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">,</span> <span class="s1">&#39;Snakes on a Plane&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span>
-                                <span class="s1">&#39;Superman Returns&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;The Night Listener&#39;</span><span class="p">:</span> <span class="mf">4.0</span><span class="p">},</span>
-           <span class="s1">&#39;Claudia Puig&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Snakes on a Plane&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;Just My Luck&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span>
-                            <span class="s1">&#39;The Night Listener&#39;</span><span class="p">:</span> <span class="mf">4.5</span><span class="p">,</span> <span class="s1">&#39;Superman Returns&#39;</span><span class="p">:</span> <span class="mf">4.0</span><span class="p">,</span>
-                            <span class="s1">&#39;You, Me and Dupree&#39;</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">},</span>
-           <span class="s1">&#39;Mick LaSalle&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Lady in the Water&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Snakes on a Plane&#39;</span><span class="p">:</span> <span class="mf">4.0</span><span class="p">,</span>
-                            <span class="s1">&#39;Just My Luck&#39;</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">,</span> <span class="s1">&#39;Superman Returns&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;The Night Listener&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span>
-                            <span class="s1">&#39;You, Me and Dupree&#39;</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">},</span>
-           <span class="s1">&#39;Jack Matthews&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Lady in the Water&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Snakes on a Plane&#39;</span><span class="p">:</span> <span class="mf">4.0</span><span class="p">,</span>
-                             <span class="s1">&#39;The Night Listener&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Superman Returns&#39;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span> <span class="s1">&#39;You, Me and Dupree&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">},</span>
-           <span class="s1">&#39;Toby&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;Snakes on a Plane&#39;</span><span class="p">:</span> <span class="mf">4.5</span><span class="p">,</span> <span class="s1">&#39;You, Me and Dupree&#39;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s1">&#39;Superman Returns&#39;</span><span class="p">:</span> <span class="mf">4.0</span><span class="p">}</span>
-           <span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Getting the Dataset</span>
+
+<span class="n">df1</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"../input/movies.csv"</span><span class="p">,</span><span class="n">usecols</span><span class="o">=</span><span class="p">[</span><span class="s1">'movieId'</span><span class="p">,</span><span class="s1">'title'</span><span class="p">])</span> <span class="c1"># ,nrows=5000)</span>
+<span class="n">df1</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">'all'</span><span class="p">)</span>
+<span class="n">df1</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+
+<span class="n">df2</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"../input/ratings.csv"</span><span class="p">,</span><span class="n">usecols</span><span class="o">=</span><span class="p">[</span><span class="s1">'userId'</span><span class="p">,</span><span class="s1">'movieId'</span><span class="p">,</span><span class="s1">'rating'</span><span class="p">])</span> <span class="c1">#,nrows=1000)</span>
+<span class="n">df2</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">'all'</span><span class="p">)</span>
+<span class="n">df2</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>movieId</th>
+      <th>title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>9125.000000</td>
+      <td>9125</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>NaN</td>
+      <td>9123</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>NaN</td>
+      <td>Hamlet (2000)</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>NaN</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>31123.291836</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>40782.633604</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2850.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>6290.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>56274.000000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>164979.000000</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>movieId</th>
+      <th>title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Toy Story (1995)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Jumanji (1995)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Grumpier Old Men (1995)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Waiting to Exhale (1995)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Father of the Bride Part II (1995)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>userId</th>
+      <th>movieId</th>
+      <th>rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>100004.000000</td>
+      <td>100004.000000</td>
+      <td>100004.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>347.011310</td>
+      <td>12548.664363</td>
+      <td>3.543608</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>195.163838</td>
+      <td>26369.198969</td>
+      <td>1.058064</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>0.500000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>182.000000</td>
+      <td>1028.000000</td>
+      <td>3.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>367.000000</td>
+      <td>2406.500000</td>
+      <td>4.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>520.000000</td>
+      <td>5418.000000</td>
+      <td>4.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>671.000000</td>
+      <td>163949.000000</td>
+      <td>5.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[2]:</div>
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>userId</th>
+      <th>movieId</th>
+      <th>rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>31</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>1029</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>1061</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>1129</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1</td>
+      <td>1172</td>
+      <td>4.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div>
+
+    <div class="">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><h2 id="Euclidean-Distance-Score"><strong>Euclidean Distance Score</strong><a class="anchor-link" href="https://www.kaggle.io/svf/1676985/1c44e7b739e1793a7b2b629d45703db9/__results__.html#Euclidean-Distance-Score" target="_self">¶</a></h2>
+</blockquote>
+<p>euclidean distance is the square root of the sum of squared differences between corresponding elements of the two vectors.Euclidean distance is only appropriate for data measured on the same scale.</p>
+<ul>
+<li>distance = 1/(1+sqrt of sum of squares between two points)</li>
+<li>value varies between 0 to 1, where closeness to 1 implies higher similarity.<em>**</em></li>
+</ul>
+
+</div>
+</div>
+</div>
+    </div>
+
+    <div class="">
+        
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Function for calculating  Euclidean distance between two critics</span>
-<span class="k">def</span> <span class="nf">sim_distance</span><span class="p">(</span><span class="n">prefs</span><span class="p">,</span> <span class="n">person1</span><span class="p">,</span> <span class="n">person2</span><span class="p">):</span>
-    <span class="n">si</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">prefs</span><span class="p">[</span><span class="n">person1</span><span class="p">]:</span>
-        <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">prefs</span><span class="p">[</span><span class="n">person2</span><span class="p">]:</span>
-            <span class="n">si</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">si</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="mi">0</span>
-
-    <span class="n">sum_of_squares</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="nb">pow</span><span class="p">(</span><span class="n">prefs</span><span class="p">[</span><span class="n">person1</span><span class="p">][</span><span class="n">item</span><span class="p">]</span> <span class="o">-</span> <span class="n">prefs</span><span class="p">[</span><span class="n">person2</span><span class="p">][</span><span class="n">item</span><span class="p">],</span> <span class="mi">2</span><span class="p">)</span>
-                          <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">si</span><span class="p">])</span>
-
-    <span class="k">return</span> <span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">sum_of_squares</span><span class="p">)</span>
-
-<span class="c1"># Calling the function</span>
-<span class="n">sim_distance</span><span class="p">(</span><span class="n">critics</span><span class="p">,</span><span class="s1">&#39;Lisa Rose&#39;</span><span class="p">,</span><span class="s1">&#39;Gene Seymour&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">euclidean_distance</span><span class="p">(</span><span class="n">person1</span><span class="p">,</span><span class="n">person2</span><span class="p">):</span>
+    <span class="c1">#Getting details of person1 and person2</span>
+    <span class="n">df_first</span><span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df2</span><span class="o">.</span><span class="n">userId</span><span class="o">==</span><span class="n">person1</span><span class="p">]</span>
+    <span class="n">df_second</span><span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df2</span><span class="o">.</span><span class="n">userId</span><span class="o">==</span><span class="n">person2</span><span class="p">]</span>
+    
+    <span class="c1">#Finding Similar Movies for person1 &amp; person2 </span>
+    <span class="n">ratings</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_first</span><span class="p">,</span><span class="n">df_second</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">'inner'</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="s1">'movieId'</span><span class="p">)</span>
+    
+    <span class="c1">#If no similar movie found, return 0 (No Similarity)</span>
+    <span class="k">if</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ratings</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">):</span> <span class="k">return</span> <span class="mi">0</span>
+    
+    <span class="c1">#sum of squared difference between ratings</span>
+    <span class="n">sum_of_squares</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="nb">pow</span><span class="p">((</span><span class="n">ratings</span><span class="p">[</span><span class="s1">'rating_x'</span><span class="p">]</span><span class="o">-</span><span class="n">ratings</span><span class="p">[</span><span class="s1">'rating_y'</span><span class="p">]),</span><span class="mi">2</span><span class="p">))</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">sum_of_squares</span><span class="p">)</span>
+    
+<span class="c1"># Checking working by passing similar ID, Corerelation should be 1</span>
+<span class="n">euclidean_distance</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Swwweeettt!!!</span>
 </pre></div>
 
 </div>
@@ -11879,7 +12315,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.14814814814814814</pre>
+<pre>1.0</pre>
 </div>
 
 </div>
@@ -11888,15 +12324,23 @@ div#notebook {
 </div>
 
 </div>
+    </div>
+
+    <div class="">
+        
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><h2 id="Pearson-Correlation-Score"><strong>Pearson Correlation Score</strong><a class="anchor-link" href="https://www.kaggle.io/svf/1676985/1c44e7b739e1793a7b2b629d45703db9/__results__.html#Pearson-Correlation-Score" target="_self">¶</a></h2>
+</blockquote>
 <ul>
-<li><p><strong>Pearson Correlation Score</strong> : Correlation between sets of data is a measure of how well they are related. It shows the linear relationship between two sets of data. In simple terms, it answers the question, Can I draw a line graph to represent the data?</p>
+<li><p>Correlation between sets of data is a measure of how well they are related. It shows the linear relationship between two sets of data. In simple terms, it answers the question, Can I draw a line graph to represent the data?</p>
 </li>
-<li><p>Value varies between -1 to 1. 0-&gt; Not related, -1 -&gt; perfect negatively corelated, 1-&gt; perfect positively corelated</p>
+<li><ul>
+<li>Value varies between -1 to 1.[ 0-&gt; Not related ; -1 -&gt; perfect negatively corelated ; 1-&gt; perfect positively corelated] </li>
+</ul>
 </li>
 </ul>
 <p>Slightly better than Euclidean because it addresses the the situation where the data isn't normalised. Like a User is giving high movie ratings in comparison to AVERAGE user.</p>
@@ -11904,39 +12348,50 @@ div#notebook {
 </div>
 </div>
 </div>
+    </div>
+
+    <div class="">
+        
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Returns the Pearson correlation coefficient for p1 and p2</span>
-<span class="k">def</span> <span class="nf">sim_pearson</span><span class="p">(</span><span class="n">prefs</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">):</span>
-    <span class="c1"># Get the list of mutually rated items</span>
-    <span class="n">si</span><span class="o">=</span><span class="p">{}</span>
-    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">prefs</span><span class="p">[</span><span class="n">p1</span><span class="p">]:</span>
-        <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">prefs</span><span class="p">[</span><span class="n">p2</span><span class="p">]:</span> <span class="n">si</span><span class="p">[</span><span class="n">item</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
-            <span class="c1"># Find the number of elements</span>
-    <span class="n">n</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">si</span><span class="p">)</span>
-            
-    <span class="c1"># if they are no ratings in common, return 0</span>
-    <span class="k">if</span> <span class="n">n</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="mi">0</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pearson_score</span><span class="p">(</span><span class="n">person1</span><span class="p">,</span><span class="n">person2</span><span class="p">):</span>
     
-    <span class="c1"># Add up all the preferences</span>
-    <span class="n">sum1</span><span class="o">=</span><span class="nb">sum</span><span class="p">([</span><span class="n">prefs</span><span class="p">[</span><span class="n">p1</span><span class="p">][</span><span class="n">it</span><span class="p">]</span> <span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="n">si</span><span class="p">])</span>
-    <span class="n">sum2</span><span class="o">=</span><span class="nb">sum</span><span class="p">([</span><span class="n">prefs</span><span class="p">[</span><span class="n">p2</span><span class="p">][</span><span class="n">it</span><span class="p">]</span> <span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="n">si</span><span class="p">])</span>
-    <span class="c1"># Sum up the squares</span>
-    <span class="n">sum1Sq</span><span class="o">=</span><span class="nb">sum</span><span class="p">([</span><span class="nb">pow</span><span class="p">(</span><span class="n">prefs</span><span class="p">[</span><span class="n">p1</span><span class="p">][</span><span class="n">it</span><span class="p">],</span><span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="n">si</span><span class="p">])</span>
-    <span class="n">sum2Sq</span><span class="o">=</span><span class="nb">sum</span><span class="p">([</span><span class="nb">pow</span><span class="p">(</span><span class="n">prefs</span><span class="p">[</span><span class="n">p2</span><span class="p">][</span><span class="n">it</span><span class="p">],</span><span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="n">si</span><span class="p">])</span>
-    <span class="c1"># Sum up the products</span>
-    <span class="n">pSum</span><span class="o">=</span><span class="nb">sum</span><span class="p">([</span><span class="n">prefs</span><span class="p">[</span><span class="n">p1</span><span class="p">][</span><span class="n">it</span><span class="p">]</span><span class="o">*</span><span class="n">prefs</span><span class="p">[</span><span class="n">p2</span><span class="p">][</span><span class="n">it</span><span class="p">]</span> <span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="n">si</span><span class="p">])</span>
-    <span class="c1"># Calculate Pearson score</span>
-    <span class="n">num</span><span class="o">=</span><span class="n">pSum</span><span class="o">-</span><span class="p">(</span><span class="n">sum1</span><span class="o">*</span><span class="n">sum2</span><span class="o">/</span><span class="n">n</span><span class="p">)</span>
-    <span class="n">den</span><span class="o">=</span><span class="n">sqrt</span><span class="p">((</span><span class="n">sum1Sq</span><span class="o">-</span><span class="nb">pow</span><span class="p">(</span><span class="n">sum1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">sum2Sq</span><span class="o">-</span><span class="nb">pow</span><span class="p">(</span><span class="n">sum2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">n</span><span class="p">))</span>
-    <span class="k">if</span> <span class="n">den</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="mi">0</span>
-    <span class="n">r</span><span class="o">=</span><span class="n">num</span><span class="o">/</span><span class="n">den</span>
+    <span class="c1">#Get detail for Person1 and Person2</span>
+    <span class="n">df_first</span><span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df2</span><span class="o">.</span><span class="n">userId</span><span class="o">==</span><span class="n">person1</span><span class="p">]</span>
+    <span class="n">df_second</span><span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df2</span><span class="o">.</span><span class="n">userId</span><span class="o">==</span><span class="n">person2</span><span class="p">]</span>
+    
+    <span class="c1"># Getting mutually rated items    </span>
+    <span class="n">ratings</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_first</span><span class="p">,</span><span class="n">df_second</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">'inner'</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="s1">'movieId'</span><span class="p">)</span>
+    
+    <span class="c1"># If no rating in common</span>
+    <span class="n">n</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">ratings</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="mi">0</span>
+
+    <span class="c1">#Adding up all the ratings</span>
+    <span class="n">sum1</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">ratings</span><span class="p">[</span><span class="s1">'rating_x'</span><span class="p">])</span>
+    <span class="n">sum2</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="n">ratings</span><span class="p">[</span><span class="s1">'rating_y'</span><span class="p">])</span>
+    
+    <span class="c1">##Summing up squares of ratings</span>
+    <span class="n">sum1_square</span><span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">ratings</span><span class="p">[</span><span class="s1">'rating_x'</span><span class="p">],</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">sum2_square</span><span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">ratings</span><span class="p">[</span><span class="s1">'rating_y'</span><span class="p">],</span><span class="mi">2</span><span class="p">))</span>
+    
+    <span class="c1"># sum of products</span>
+    <span class="n">product_sum</span><span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">ratings</span><span class="p">[</span><span class="s1">'rating_x'</span><span class="p">]</span><span class="o">*</span><span class="n">ratings</span><span class="p">[</span><span class="s1">'rating_y'</span><span class="p">])</span>
+    
+    <span class="c1">## Calculating Pearson Score</span>
+    <span class="n">numerator</span><span class="o">=</span> <span class="n">product_sum</span> <span class="o">-</span> <span class="p">(</span><span class="n">sum1</span><span class="o">*</span><span class="n">sum2</span><span class="o">/</span><span class="n">n</span><span class="p">)</span>
+    <span class="n">denominator</span><span class="o">=</span><span class="n">sqrt</span><span class="p">((</span><span class="n">sum1_square</span><span class="o">-</span> <span class="nb">pow</span><span class="p">(</span><span class="n">sum1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">n</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">sum2_square</span> <span class="o">-</span> <span class="nb">pow</span><span class="p">(</span><span class="n">sum2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">n</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">denominator</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="mi">0</span>
+    
+    <span class="n">r</span><span class="o">=</span><span class="n">numerator</span><span class="o">/</span><span class="n">denominator</span>
+    
     <span class="k">return</span> <span class="n">r</span>
 
-<span class="n">sim_pearson</span><span class="p">(</span><span class="n">critics</span><span class="p">,</span><span class="s1">&#39;Lisa Rose&#39;</span><span class="p">,</span><span class="s1">&#39;Gene Seymour&#39;</span><span class="p">)</span>
+<span class="c1">#Checking function by passing similar ID, Output should be 1</span>
+<span class="n">pearson_score</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11953,156 +12408,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0.39605901719066977</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Getting Top matches for a particular person based on any of the equality scores described above.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Returns the best matches for person from the prefs dictionary.</span>
-<span class="c1"># Number of results and similarity function are optional params.</span>
-<span class="k">def</span> <span class="nf">topMatches</span><span class="p">(</span><span class="n">prefs</span><span class="p">,</span><span class="n">person</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">similarity</span><span class="o">=</span><span class="n">sim_pearson</span><span class="p">):</span>
-    <span class="n">scores</span><span class="o">=</span><span class="p">[(</span><span class="n">similarity</span><span class="p">(</span><span class="n">prefs</span><span class="p">,</span><span class="n">person</span><span class="p">,</span><span class="n">other</span><span class="p">),</span><span class="n">other</span><span class="p">)</span> <span class="k">for</span> <span class="n">other</span> <span class="ow">in</span> <span class="n">prefs</span> <span class="k">if</span> <span class="n">other</span><span class="o">!=</span><span class="n">person</span><span class="p">]</span>
-    <span class="c1"># Sort the list so the highest scores appear at the top</span>
-    <span class="n">scores</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span> <span class="p">)</span>
-    <span class="n">scores</span><span class="o">.</span><span class="n">reverse</span><span class="p">(</span> <span class="p">)</span>
-    <span class="k">return</span> <span class="n">scores</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">n</span><span class="p">]</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Exapmple</span>
-<span class="n">topMatches</span><span class="p">(</span><span class="n">critics</span><span class="p">,</span><span class="s1">&#39;Toby&#39;</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[6]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[(0.9912407071619299, &#39;Lisa Rose&#39;),
- (0.9244734516419049, &#39;Mick LaSalle&#39;),
- (0.8934051474415647, &#39;Claudia Puig&#39;)]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Getting-Recommendation">Getting Recommendation<a class="anchor-link" href="#Getting-Recommendation">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Gets recommendations for a person by using a weighted average</span>
-<span class="c1"># of every other user&#39;s rankings</span>
-<span class="k">def</span> <span class="nf">getRecommnedation</span><span class="p">(</span><span class="n">prefs</span><span class="p">,</span> <span class="n">person</span><span class="p">,</span> <span class="n">similarity</span><span class="o">=</span><span class="n">sim_pearson</span><span class="p">):</span>
-    <span class="n">totals</span><span class="o">=</span> <span class="p">{}</span>
-    <span class="n">simSums</span><span class="o">=</span> <span class="p">{}</span>
-    <span class="k">for</span> <span class="n">other</span> <span class="ow">in</span> <span class="n">prefs</span><span class="p">:</span>
-        <span class="c1"># Dont compare to self</span>
-        <span class="k">if</span> <span class="n">other</span><span class="o">==</span><span class="n">person</span><span class="p">:</span> <span class="k">continue</span>
-        
-        <span class="n">sim</span><span class="o">=</span><span class="n">similarity</span><span class="p">(</span><span class="n">prefs</span><span class="p">,</span><span class="n">person</span><span class="p">,</span><span class="n">other</span><span class="p">)</span>
-        
-        <span class="c1"># Ignores Score of Zero or Negatie correlation         </span>
-        <span class="k">if</span> <span class="n">sim</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">:</span> <span class="k">continue</span>
-        
-        <span class="c1"># Only score movies that person havnt seen</span>
-        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">prefs</span><span class="p">[</span><span class="n">other</span><span class="p">]:</span>
-            <span class="k">if</span> <span class="n">item</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">prefs</span><span class="p">[</span><span class="n">person</span><span class="p">]</span> <span class="ow">or</span> <span class="n">prefs</span><span class="p">[</span><span class="n">person</span><span class="p">][</span><span class="n">item</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
-                <span class="c1"># Similarity* rating</span>
-                <span class="n">totals</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">item</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-                <span class="n">totals</span><span class="p">[</span><span class="n">item</span><span class="p">]</span><span class="o">+=</span><span class="n">prefs</span><span class="p">[</span><span class="n">other</span><span class="p">][</span><span class="n">item</span><span class="p">]</span><span class="o">*</span><span class="n">sim</span>
-                <span class="c1">#sum of user similarities that have rated the movie</span>
-                <span class="n">simSums</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">item</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-                <span class="n">simSums</span><span class="p">[</span><span class="n">item</span><span class="p">]</span><span class="o">+=</span><span class="n">sim</span>
-        <span class="c1"># Creating Normalized List</span>
-        <span class="n">ranking</span><span class="o">=</span><span class="p">[(</span><span class="n">total</span><span class="o">/</span><span class="n">simSums</span><span class="p">[</span><span class="n">item</span><span class="p">],</span><span class="n">item</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span><span class="p">,</span><span class="n">total</span> <span class="ow">in</span> <span class="n">totals</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
-        
-        <span class="c1"># return the sorted List</span>
-        <span class="n">ranking</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-        <span class="n">ranking</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-        <span class="k">return</span> <span class="n">ranking</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Example Recoomendation</span>
-<span class="n">getRecommnedation</span><span class="p">(</span><span class="n">critics</span><span class="p">,</span><span class="s1">&#39;Toby&#39;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[8]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[(3.0, &#39;The Night Listener&#39;),
- (3.0, &#39;Just My Luck&#39;),
- (2.5, &#39;Lady in the Water&#39;)]</pre>
+<pre>1.0</pre>
 </div>
 
 </div>
@@ -12112,10 +12418,238 @@ div#notebook {
 
 </div>
     </div>
+
+    <div class="">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><h2 id="Getting-result-based-on-Pearson-Score"><strong>Getting result based on Pearson Score</strong><a class="anchor-link" href="https://www.kaggle.io/svf/1676985/1c44e7b739e1793a7b2b629d45703db9/__results__.html#Getting-result-based-on-Pearson-Score" target="_self">¶</a></h2>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+
+    <div class="">
+        
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Returns the best matches for person from the prefs dictionary.</span>
+<span class="c1"># Number of results and similarity function are optional params.</span>
+<span class="k">def</span> <span class="nf">topMatches</span><span class="p">(</span><span class="n">personId</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">similarity</span><span class="o">=</span><span class="n">pearson_score</span><span class="p">):</span>
+    <span class="n">scores</span><span class="o">=</span><span class="p">[(</span><span class="n">similarity</span><span class="p">(</span><span class="n">personId</span><span class="p">,</span><span class="n">other</span><span class="p">),</span><span class="n">other</span><span class="p">)</span> <span class="k">for</span> <span class="n">other</span> <span class="ow">in</span> <span class="n">df2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df2</span><span class="p">[</span><span class="s1">'userId'</span><span class="p">]</span><span class="o">!=</span><span class="n">personId</span><span class="p">][</span><span class="s1">'userId'</span><span class="p">]]</span>
+    <span class="c1"># Sort the list so the highest scores appear at the top</span>
+    <span class="n">scores</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span> <span class="p">)</span>
+    <span class="n">scores</span><span class="o">.</span><span class="n">reverse</span><span class="p">(</span> <span class="p">)</span>
+    <span class="k">return</span> <span class="n">scores</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">n</span><span class="p">]</span>
+
+<span class="n">topMatches</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="c1">## Getting 3 most similar Users for Example </span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[5]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[(1.0000000000000027, 177),
+ (1.0000000000000027, 177),
+ (1.0000000000000027, 177)]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div>
+
+    <div class="">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><h2 id="Getting-Recommendation"><strong>Getting Recommendation</strong><a class="anchor-link" href="https://www.kaggle.io/svf/1676985/1c44e7b739e1793a7b2b629d45703db9/__results__.html#Getting-Recommendation" target="_self">¶</a></h2>
+</blockquote>
+
+</div>
+</div>
+</div>
+    </div>
+
+    <div class="">
+        
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Gets recommendations for a person by using a weighted average</span>
+<span class="c1"># of every other user's rankings</span>
+<span class="k">def</span> <span class="nf">getRecommnedation</span><span class="p">(</span><span class="n">personId</span><span class="p">,</span> <span class="n">similarity</span><span class="o">=</span><span class="n">pearson_score</span><span class="p">):</span>
+    <span class="sd">'''</span>
+<span class="sd">    totals: Dictionary containing sum of product of Movie Ratings by other user multiplied by weight(similarity)</span>
+<span class="sd">    simSums: Dictionary containung sum of weights for all the users who have rated that particular movie.</span>
+<span class="sd">    '''</span>
+    <span class="n">totals</span><span class="p">,</span><span class="n">simSums</span><span class="o">=</span> <span class="p">{},{}</span>
+    
+    <span class="n">df_person</span><span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df2</span><span class="o">.</span><span class="n">userId</span><span class="o">==</span><span class="n">personId</span><span class="p">]</span>
+    
+    <span class="k">for</span> <span class="n">otherId</span> <span class="ow">in</span> <span class="n">df2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df2</span><span class="p">[</span><span class="s1">'userId'</span><span class="p">]</span><span class="o">!=</span><span class="n">personId</span><span class="p">][</span><span class="s1">'userId'</span><span class="p">]:</span> <span class="c1"># all the UserID except personID</span>
+        
+        <span class="c1"># Getting Similarity with OtherID</span>
+        <span class="n">sim</span><span class="o">=</span><span class="n">similarity</span><span class="p">(</span><span class="n">personId</span><span class="p">,</span><span class="n">otherId</span><span class="p">)</span>
+        
+        <span class="c1"># Ignores Score of Zero or Negatie correlation         </span>
+        <span class="k">if</span> <span class="n">sim</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">:</span> <span class="k">continue</span>
+            
+        <span class="n">df_other</span><span class="o">=</span><span class="n">df2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df2</span><span class="o">.</span><span class="n">userId</span><span class="o">==</span><span class="n">otherId</span><span class="p">]</span>
+        
+        <span class="c1">#Movies not seen by the personID</span>
+        <span class="n">movie</span><span class="o">=</span><span class="n">df_other</span><span class="p">[</span><span class="o">~</span><span class="n">df_other</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">df_person</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="mi">1</span><span class="p">)]</span>
+        
+        <span class="k">for</span> <span class="n">movieid</span><span class="p">,</span><span class="n">rating</span> <span class="ow">in</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">movie</span><span class="p">[[</span><span class="s1">'movieId'</span><span class="p">,</span><span class="s1">'rating'</span><span class="p">]])):</span>
+            <span class="c1">#similarity* Score</span>
+            <span class="n">totals</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">movieid</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">totals</span><span class="p">[</span><span class="n">movieid</span><span class="p">]</span><span class="o">+=</span><span class="n">rating</span><span class="o">*</span><span class="n">sim</span>
+            
+            <span class="c1">#Sum of Similarities</span>
+            <span class="n">simSums</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">movieid</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">simSums</span><span class="p">[</span><span class="n">movieid</span><span class="p">]</span><span class="o">+=</span><span class="n">sim</span>
+            
+        
+        
+        
+        <span class="c1"># Creating Normalized List</span>
+        <span class="n">ranking</span><span class="o">=</span><span class="p">[(</span><span class="n">t</span><span class="o">/</span><span class="n">simSums</span><span class="p">[</span><span class="n">item</span><span class="p">],</span><span class="n">item</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span><span class="p">,</span><span class="n">t</span> <span class="ow">in</span> <span class="n">totals</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
+        
+        <span class="c1"># return the sorted List</span>
+        <span class="n">ranking</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+        <span class="n">ranking</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+        <span class="n">recommendedId</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ranking</span><span class="p">])</span>
+        
+        
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="n">df1</span><span class="p">[</span><span class="s1">'movieId'</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">recommendedId</span><span class="p">)][</span><span class="s1">'title'</span><span class="p">])[:</span><span class="mi">20</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div>
+
+    <div class="">
+        
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Example Recoomendation</span>
+<span class="c1">#returns 20 recommended movie for the given UserID</span>
+<span class="c1"># userId can be ranged from 1 to 671</span>
+<span class="n">getRecommnedation</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">getRecommnedation</span><span class="p">(</span><span class="mi">671</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[7]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array(['GoldenEye (1995)', 'Babe (1995)',
+       'Rumble in the Bronx (Hont faan kui) (1995)',
+       'Birdcage, The (1996)', 'Batman Forever (1995)',
+       'Judge Dredd (1995)', 'Net, The (1995)',
+       'Star Wars: Episode IV - A New Hope (1977)', 'Only You (1994)',
+       'Pulp Fiction (1994)', 'Star Trek: Generations (1994)',
+       'Clear and Present Danger (1994)', 'Forrest Gump (1994)',
+       'Four Weddings and a Funeral (1994)', 'Lion King, The (1994)',
+       'Mask, The (1994)', 'True Lies (1994)',
+       'Addams Family Values (1993)', "Carlito's Way (1993)",
+       'Cliffhanger (1993)'], dtype=object)</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[7]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array(['GoldenEye (1995)', 'Sense and Sensibility (1995)',
+       'Clueless (1995)', 'Seven (a.k.a. Se7en) (1995)',
+       'Usual Suspects, The (1995)', 'Mighty Aphrodite (1995)',
+       "Mr. Holland's Opus (1995)", 'Braveheart (1995)',
+       'Brothers McMullen, The (1995)', 'Apollo 13 (1995)',
+       'Batman Forever (1995)', 'Crimson Tide (1995)',
+       'Die Hard: With a Vengeance (1995)', 'First Knight (1995)',
+       'Net, The (1995)', 'Nine Months (1995)', 'Waterworld (1995)',
+       'Circle of Friends (1995)', 'Clerks (1994)', 'Disclosure (1994)'], dtype=object)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div>
+
+    <div class="">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Future-Improvements"><strong><em>Future Improvements</em></strong><a class="anchor-link" href="https://www.kaggle.io/svf/1676985/1c44e7b739e1793a7b2b629d45703db9/__results__.html#Future-Improvements" target="_self">¶</a></h3><hr>
+<ul>
+<li>Applying more sophisticated similarities score methods to improve the suggestions.</li>
+<li>Write a function to precompute user similarities, and alter the recommendation code to use only the top five other users to get recommendations.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    </div>
+
+    </div>
   </div>
-</body>
+<script src="./final_files/manifest.js"></script>
+<script src="./final_files/vendor.js"></script>
+<script src="./final_files/notebookViewer.js"></script>
 
  
 
 
-</html>
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
